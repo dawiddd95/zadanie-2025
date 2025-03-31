@@ -1,0 +1,33 @@
+@use '../../../styles/variables' as vars;
+
+.cart-button {
+  background-color: vars.$color-border;
+  color: vars.$color-dark;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: vars.$font-size-base;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  &:hover {
+    background-color: darken(vars.$color-border, 20%);
+  } 
+  
+  &:focus {
+    outline: 2px solid vars.$color-primary;
+    outline-offset: 2px;
+  }
+
+  &--active {
+    background-color: vars.$color-primary;
+    color: vars.$color-light;
+
+    &:hover {
+      background-color: darken(vars.$color-primary, 20%);
+    }  
+  }
+}

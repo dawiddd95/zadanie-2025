@@ -1,0 +1,35 @@
+@use '../../../styles/variables' as vars;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: vars.$color-light;
+  border-bottom: 1px solid vars.$color-border;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    font-size: vars.$font-size-lg;
+    font-weight: bold;
+    gap: 8px;
+
+    &--my {
+      color: vars.$color-dark;
+    }
+
+    &--shop {
+      color: vars.$color-primary;
+    }
+  }
+
+  &__logoIcon {
+    width: 28px;
+    height: 28px;
+    fill: vars.$color-primary;
+  }
+}
