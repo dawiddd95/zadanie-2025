@@ -3,5 +3,7 @@ Konfigurację HOST i HTTPS wrzuciłem w .env i wrzuciłem też na repo, oczywiś
 
 ## Uruchomienie aplikacji
 Instlaujemy zależności komendą: npm install
+
 Uruchamiamy projekt: npm run start
+
 Projekt powinien być widoczny pod adresem: https://shop.local:3000/
